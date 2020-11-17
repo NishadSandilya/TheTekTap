@@ -289,7 +289,7 @@ header{
 .socialhandles{
   display: none;
 }
-@media only screen and (min-width:600px){
+@media only screen and (min-width:960px){
   *{
     margin: 0;
     padding: 0;
