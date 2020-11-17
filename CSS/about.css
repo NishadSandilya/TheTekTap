@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display&family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.aboutcontainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* height: 150vh; */
+    /* background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(3,3,3,0.7)); */
+}
+.about{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(3,3,3,0));
+    width: 80%;
+}
+.tttdescsub{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Six Caps', sans-serif;
+    color: white;
+    letter-spacing: 0.3em;
+    font-size: 3em;
+    padding: 10px;
+}
+.tttdescsub::after{
+    content: '';
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    height: 10px;
+    position: absolute;
+    top: 115%;
+}
+.maindesc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    line-height: 1.3em;
+}
+.maindesc::after{
+    position: absolute;
+    top: 95%;
+    content: '';
+    background-color: white;
+    width: 90%;
+    height: 5px;
+    border-radius: 3px;
+}
+.aboutme{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Six Caps', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.3em;
+    font-size: 3em;
+    padding: 10px;
+}
+.aboutmecont{
+    display: flex;  
+    flex-direction: row;
+}
+.aboutmedesc{
+    width: 50vw;    
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgb(85, 85, 85);
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    line-height: 1.3em;
+    font-weight: 900;
+}
+.mainimage{
+    width: 300px;
+    height: 300px;
+}
+.myimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+@media only screen and (max-width:600px){
+    .tttdescsub{
+        font-size: 2em;
+    }
+    .maindesc{
+        font-size: 0.8em;
+        line-height: 1.3em;
+    }
+    .aboutmedesc{
+        margin-top: -10px;
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 1.3em;
+    }
+    .aboutmecont{
+        flex-direction: column;
+    }
+    .mainimage{
+    width: 100px;
+    height: 100px;
+}
+    .myimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

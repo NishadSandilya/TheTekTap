@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Unica+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.boxes{
+    background: burlywood;
+    border: solid white 3px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}

@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display&family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+*,*::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+#hm{
+  display: none;
+}
+body{
+  background-image: url('../All_Images/Edited/background/tinyones/main_background2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  display: flex;
+  justify-content: left;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  z-index: 999;
+}
+.logo{
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.navlist{  
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  top: 85%;
+  background-color: rgba(2,2,2,0.9);
+  width: 100%;
+  transform: scale(1,0);
+  transition: 150ms ease-in-out;
+  transform-origin: top;
+  z-index: 999;
+}
+.navlist ul{
+  margin-left: 10px;
+}
+.navlist li, a{
+  font-family: 'Big Shoulders Inline Display', cursive;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 6px 0;
+  letter-spacing: 0.2em;
+}
+.navlist .social{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navlist .social li{
+  margin-right: 10px;
+}
+.navlist li{
+  margin-top: 10px;
+  transition: ease-in-out 250ms;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity ease-in-out 250ms;
+}
+.navlist .main, .social{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger{  
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  transition: ease-in-out 150ms;
+  z-index: 999;
+}
+.hamburger .line1{
+  position: absolute;
+  background: black;
+  top: 0px;
+  right: 7px;
+  width: 27px;
+  height: 3px;
+}
+.hamburger .line2{
+  position: absolute;
+  background: black;
+  width: 27px;
+  right: 7px;
+  top: 7px;
+  height: 3px;
+}
+.hamburger .line3{
+  position: absolute;
+  background: black;
+  top: 14px;
+  right: 7px;
+  width: 27px;
+  height: 3px;
+}
+.hamburger:hover{
+  opacity: 0.5;
+  transition: ease-in-out 150ms;
+}
+.ham{
+  display: none;
+}
+.ham:checked ~ nav{
+  transform: scale(1,1);
+  transition: ease-in-out 250ms;
+}
+.ham:checked ~ nav li{
+  opacity: 1;
+  transition: opacity 150ms ease-in-out 250ms;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainbanner1{
+    display:none;
+}
+.mainbannermobile1{
+  width: 100%;
+  margin-top: -5px;
+}
+.banner_content{
+  margin-top: -5px;
+  background-image: linear-gradient(to bottom, rgba(2,2,2,1), rgba(3,3,3,0.4));
+}
+.banner_tagline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: 'Six Caps', sans-serif;
+  color: white;
+  letter-spacing: 0.3em;
+}
+.desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.mainbannerlink{
+  padding: 1em;
+  transition: all 0.3s ease;
+}
+.mainbannerlink:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.maincontent{
+  background-color: transparent;
+  width: 100%;
+  /* height: 600px; */
+}
+.audible{
+  width: 300px;
+  min-width: 50px;
+  padding: 20px;
+}
+
+.maincontent{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: solid black; */
+}
+.amazonaudible{
+  /* border: black solid; */
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+.polaroids{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.reviews{
+  width: 100%;
+}
+.promotion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2.5em;
+  color: rgb(117, 116, 116);
+  font-family: 'Six Caps', sans-serif;
+  letter-spacing: 0.3em;
+  margin-left: 20px;
+  padding: 10px;
+}
+.amazonaudible{
+  position: relative;
+  transition: all 0.2s ease 200ms;
+}
+.amazonaudible:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.amazonaudible::before{
+  content:'';
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8),transparent); 
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  transform: scale(1,0);
+  transform-origin: bottom;
+  transition: all 0.3s ease 200ms;
+}
+.amazonaudible::after{
+  position: absolute;
+  bottom: 45px;  
+  content: 'See whats inside?';
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 900;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  transform: scale(0);
+  transition: all 0.2s ease 200ms;
+}
+.amazonaudible:hover::before{
+  transform: scale(1,1);
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 0 30px rgba(33,33,33,.2);
+}
+.amazonaudible:hover::after{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.footer{
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(1,1,1,0.85));
+  width: 100%;
+  display: flex;
+}
+.tttlogo{
+  padding: 30px;
+}
+.contactdetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* border: white solid; */
+  padding: 20px;
+  font-family: 'Six Caps', sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 1em;
+}
+.socialhandles{
+  display: none;
+}
+@media only screen and (min-width:600px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .top{
+    background-image: linear-gradient(to right, rgba(2,2,2,0.9) 70%, rgba(3,3,3,0.7));
+    position: sticky;
+    top: 0;
+  }
+  .navlist{
+    all: unset;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .navlist li{
+    all: unset;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 4px;
+  }
+  .navlist .main, .social{    
+    all: unset;
+    display: flex;
+  }
+  .navlist .social{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+  }
+  .navlist .social li{
+    margin-left: 0px;   
+  }
+  .hamburger{
+    visibility: hidden;
+  }
+  .navlist .main li:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  .mainitems1, .mainitems2, .mainitems3{
+    position: relative;
+  }
+  .mainitems1::before, .mainitems2::before, .mainitems3::before{
+    content: '';
+    background: white;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom:7%;
+    transform: scale(0,1);
+    transition: all 0.3s ease;
+  }
+  .mainitems1:hover::before, .mainitems2:hover::before, .mainitems3:hover::before{
+    transform: scale(1,1);
+    transition: all 0.3s ease;
+  }  
+  .mainbanner1{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-bottom: -5px;
+}
+.banner_content{
+  background-image: linear-gradient(to bottom, rgba(2,2,2,1), rgba(3,3,3,0.4));
+}
+.mainbannermobile1{
+  display: none;
+}
+.banner_tagline{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: 'Six Caps', sans-serif;
+  color: white;
+  letter-spacing: 0.3em;
+}
+.desc{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.social{
+  visibility: hidden;
+}
+.promotion{
+  margin-left: 20px;
+  padding: 10px;
+}
+.footer{
+  display: flex;
+  /* border: white solid; */
+  justify-content: space-around;
+}
+.socialhandles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Six Caps', sans-serif;
+  color: white;
+  /* border: solid white; */
+  font-size: 1.2em;
+  letter-spacing: 0.3em;
+}
+.socialicons{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  /* border: white solid; */
+}
+.icons li{
+  list-style: none;
+}
+.socialitems1, .socialitems2, .socialitems3{
+  opacity: 1.0;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.socialitems1:hover, .socialitems2:hover, .socialitems3:hover{
+  opacity: 0.8;
+  transform:  scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+.tttlogo{
+  transition: all 0.3s ease-in-out 100ms;
+}
+.tttlogo:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease ease-in-out;
+}
+}
+
+
