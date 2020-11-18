@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    background-image: linear-gradient(to right, rgba(250, 171, 119, 0.959) 70%, rgba(190, 190, 190, 0.4));
+    }
+    .footer{
+    background-image: linear-gradient(to bottom, rgb(252, 230, 157), rgba(252, 190, 109, 0.85));
+}
+.heroforaudiblecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heroforaudible{
+    background-color:rgba(0,0,0,0.8);
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.start{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Ewert', cursive;
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 200;
+    color: rgb(155, 155, 155);
+    letter-spacing: 0.2em;
+    font-size: 2.5em;
+}
+.contentstart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    font-size: 1.2em;
+    color: rgb(173, 173, 173);
+}
+.promooo{
+    width: 100%;
+}
+.promooo1{
+    display: flex;
+}
+.adaudible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* mobileview */
+@media only screen and (max-width:960px){
+    .top{
+    background-image: linear-gradient(to bottom, rgb(255, 170, 91), transparent);
+}
+.footer{
+    background-image: linear-gradient(to bottom, rgb(252, 230, 157), rgba(252, 190, 109, 0.85));
+}
+.start{
+    font-size: 2em;
+}
+.contentstart{
+    font-size: 1em;
+}
+.promooo{
+    width: 100%;
+}
+.contentstart{
+    text-align: center;
+}
+}

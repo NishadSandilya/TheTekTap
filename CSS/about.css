@@ -30,6 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: 'Six Caps', sans-serif;
     color: white;
     letter-spacing: 0.3em;
@@ -49,7 +50,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     margin-top: 20px;
     padding: 30px;
     font-family: 'Cormorant Garamond', serif;
@@ -74,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: 'Six Caps', sans-serif;
     color: rgb(255, 255, 255);
     letter-spacing: 0.3em;
@@ -119,10 +121,12 @@
         font-size: 2em;
     }
     .maindesc{
+        text-align: center;
         font-size: 0.8em;
         line-height: 1.3em;
     }
     .aboutmedesc{
+        text-align: center;
         margin-top: -10px;
         width: 100%;
         font-size: 0.8em;

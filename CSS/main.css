@@ -151,6 +151,7 @@ header{
 }
 .banner_tagline{
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -164,12 +165,17 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   padding: 20px;
   color: white;
   font-family: 'Julius Sans One', sans-serif;
 }
 .mainbannerlink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 1em;
   transition: all 0.3s ease;
 }
@@ -189,6 +195,7 @@ header{
 }
 
 .maincontent{
+  /* border: solid black; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -213,17 +220,19 @@ header{
 }
 .reviews{
   width: 100%;
+  /* border: black solid; */
 }
 .promotion{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   font-size: 2.5em;
   color: rgb(117, 116, 116);
   font-family: 'Six Caps', sans-serif;
   letter-spacing: 0.3em;
-  margin-left: 20px;
+  margin-left: 0px;
   padding: 10px;
 }
 .amazonaudible{
@@ -232,9 +241,10 @@ header{
 }
 .amazonaudible:hover{
   transform: scale(1.1);
+  box-shadow: 5px 19px 50px #888888;
   transition: all 0.3s ease;
 }
-.amazonaudible::before{
+/* .amazonaudible::before{
   content:'';
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8),transparent); 
   position: absolute;
@@ -245,7 +255,7 @@ header{
   transform: scale(1,0);
   transform-origin: bottom;
   transition: all 0.3s ease 200ms;
-}
+} */
 .amazonaudible::after{
   position: absolute;
   bottom: 45px;  
@@ -253,15 +263,15 @@ header{
   font-family: 'Julius Sans One', sans-serif;
   font-weight: 900;
   font-weight: bolder;
-  color: rgb(255, 255, 255);
+  color: rgb(92, 92, 92);
   transform: scale(0);
   transition: all 0.2s ease 200ms;
 }
-.amazonaudible:hover::before{
+/* .amazonaudible:hover::before{
   transform: scale(1,1);
   transition: all 0.1s ease-in-out;
   box-shadow: 0 0 30px rgba(33,33,33,.2);
-}
+} */
 .amazonaudible:hover::after{
   transform: scale(1.1);
   transition: all 0.3s ease;
@@ -275,10 +285,12 @@ header{
   padding: 30px;
 }
 .contactdetails{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   /* border: white solid; */
   padding: 20px;
