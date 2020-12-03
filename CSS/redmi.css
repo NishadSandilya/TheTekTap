@@ -63,6 +63,10 @@ p{
     display: flex;
     flex-direction: column;
 }
+.youtubepop{
+    min-width: 80%;
+    min-height: 200px;
+}
 .imgclass1{
     width: 90%;
     display: flex;
@@ -220,6 +224,9 @@ ul{
 .rowitems3 .rowadddiff{
     outline: rgb(241, 187, 237) solid 10px;
 }
+#ytpop{
+    max-width: 100%;
+}
 p{
     text-align: justify;
 }
@@ -257,5 +264,4 @@ p{
     .rog{
         width: 300px;
     }
-    
 }
