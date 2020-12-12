@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Ewert&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Ewert&family=Quicksand&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), transparent);
+}
+.footer{
+    background-image: linear-gradient(to bottom, rgb(106, 158, 255), rgba(113, 222, 255, 0.85));
+}
+.heromaincont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herocont{
+    /* border: black solid; */
+    /* display: flex;
+    flex-direction: column; */
+    background-color: white;
+    width: 80%;
+    box-shadow: 5px 19px 50px #888888;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.columns h2{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Ewert', cursive;
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 200;
+    color: rgb(155, 155, 155);
+    letter-spacing: 0.2em;
+    /* font-family: 'Quicksand', sans-serif; */    
+}
+.columns p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    font-size: 0.9em;
+    color: rgb(173, 173, 173);
+}
+.rog{
+    width: 100%;
+    min-width: 50px;
+    padding: 20px;
+    opacity: 0.8;    
+}
+.rowitems1{
+    background: rgb(114, 186, 253);
+}
+.rowitems2{
+    background: rgb(255, 255, 255);
+}
+.rowitems3{
+    background: rgb(114, 186, 253);
+}
+
+.rowitems4{
+    background: rgb(255, 200, 252);
+}
+.rowitems5{
+    background: rgb(255, 255, 255);
+}
+.rowitems1 p{
+    height: 100%;
+    color: rgb(255, 255, 255);
+}
+.rowitems5 p{
+    height: 100%;
+    color: rgb(238, 231, 206);
+}
+.rowcontent1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    /* border: solid rgb(255, 49, 49); */
+}
+#last{
+    font-weight: 900;
+}
+.addsss{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.imgrog{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid rgb(255, 255, 255); */
+}
+.rowad1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+.rowadddiff{
+    margin: 20px;
+    outline: rgb(255, 255, 255) solid 10px;
+    /* outline-offset: -20px; */
+    padding: 10px;
+}
+.rowitems2 p{
+    color: rgb(148, 148, 148);
+}
+.rowitems3 p{
+    color: rgb(255, 255, 255);
+}
+.rowitems3 h1{
+    color: rgb(187, 187, 187);
+}
+.rowitems4 p{
+    color: rgb(158, 158, 158);
+}
+.rowitems5 p{
+    color: rgb(121, 121, 121);
+}
+.rowitems2 .rowadddiff{
+    outline: rgb(116, 192, 255) solid 10px;
+}
+.rowitems4 .rowadddiff{
+    outline: rgb(88, 178, 252) solid 10px;
+}
+.rowitems3 .rowadddiff{
+    outline: rgb(112, 186, 255) solid 10px;
+}
+.rowitems5 .rowadddiff{
+    outline: rgb(112, 186, 255) solid 10px;
+}
+
+@media only screen and (min-width:960px){
+    .top{
+    background-image: linear-gradient(to right, rgba(115, 172, 247, 0.7) 70%, rgba(190, 190, 190, 0.4));
+    }
+    .columns h2{
+        font-size: 3em;
+    }
+    .columns p{
+        text-align: left;
+        font-size: 1.2em;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+    .rowitems1 p{
+        width: 50vw;
+    }
+    .rowitems2 p{
+        width: 50vw;
+    }
+    .rowitems3 p{
+        width: 50vw;
+    }
+    .rowitems4 p{
+        width: 50vw;
+    }
+    .rowitems5 p{
+        width: 50vw;
+    }
+    .rog{
+        width: 300px;
+    }
+}
