@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets get you started</title>
+    <link rel="stylesheet" href="./qe.css">
+    <link rel="icon" href="./te.png" type="image/x-icon">
+    <meta name="theme-color" content="#404040" />
+</head>
+<body>
+    <div class="container">
+        <h3>Theesaan Enterprises</h3>
+        <p>Please fill the below form. This will give us an idea about what you really want from your site</p>
+        <form target="_blank" action="./localDb/detailsGotten.html" method="GET">
+            <span class="bars">
+                <label class="mainLabel" for="fullName">Full Name</label>
+                <input id="fullName" name="User Name" type="text" required>
+            </span>
+            <span class="bars">
+                <label  class="mainLabel" for="email">E-Mail</label>
+                <input id="email" name="User Email" type="email" required>
+            </span>
+            <span class="bars">
+                <label class="mainLabel" for="contactNumber">Phone</label>
+                <input id="contactNumber" name="User Phone Number" type="tel" required>
+            </span>
+            <span class="bars">
+                <label class="mainLabel" for="companyName">Company Name</label>
+                <input id="companyName" name="User Company Name" type="text" required>
+            </span>
+            <span class="bars">
+                <label  class="mainLabel"for="domainExtension">Preferred Domain Extension</label>
+                <input onchange="domainChangeHandler()" id="domainExtension" name="Preferred Domain Extension" list="extensions" required>
+                <datalist id="extensions">
+                    <option value=".com">
+                    <option value=".in">
+                    <option value=".co">
+                    <option value=".co.in">
+                    <option value=".org">
+                    <option value=".info">
+                </datalist>
+            </span>
+            <span class="bars">
+                <label  class="mainLabel"for="domainName">Preferred domain name (From GoDaddy)</label>
+                <input type="text" name="User Domain Name" id="domainName">
+            </span>
+            <span>
+                <label  class="mainLabel"for="sitePreferrences">Write a few words about how you want your site to look and feel like</label>
+                <textarea required id="sitePreferrences" name="User Site Preferrences" type="text"></textarea>
+            </span>
+            <span class="rdo">
+                <label class="mainLabel">Chose your prefered site level (excluding domain and taxes)</label>
+                <span><input value="999" name="User site Level" id="package999" type="radio">
+                <label for="package999">INR 999 (1-2 element static sites)</label></span>
+                <span><input value="6999" name="User site Level" id="package6999" type="radio"><label for="package6999">INR 6999 (Multi-page cool looking partially dynamic sites + free updates for a year)</label></span>
+                <span><input value="34999" name="User site Level" id="package34999" type="radio"><label for="package34999">INR 34999 (Advanced dynamic web-apps)</label></span>
+                <span><input value="99999" name="User site Level" id="package99999" type="radio"><label for="package99999">INR 99999 (High end scalable dynamic web-apps, e-commerce sites, client updatable, admin maintainable)</label></span>
+                <span><input value="199999" name="User site Level" id="package1.9L" type="radio"><label for="package1.9L">INR 199999 (High end scalable dynamic web-apps, e-commerce sites, mobile apps for android & iOS, client + admin maintainable)</label></span>
+            </span>
+            <span class="rdo1">
+                <label class="mainLabel">Do you have a company logo?</label>
+                <span><input id="hasLogoY" name="User logo available" type="radio" value="Yes"><label for="hasLogoY">Yes</label></span>
+                <span><input id="hasLogoN" name="User logo available" type="radio" value="No"><label for="hasLogoN">No</label></span>
+            </span>
+            <span class="rdo1">
+                <label class="mainLabel">Do you want a logo re-design?</label>
+                <span><input id="logoRedesignY" name="User logo redesign" type="radio" value="Yes"><label for="logoRedesignY">Yes</label></span>
+                <span><input id="logoRedesignN" name="User logo redesign" type="radio" value="No"><label for="logoRedesignN">No</label></span>
+            </span>
+            <span style="cursor: pointer;" class="backtote">Back</span>
+            <button style="cursor: pointer;" onclick="submitBtnHandler()" class="btn-fin" type="submit">Submit</button>            
+            <button style="display: none; cursor: pointer;" class="reset-btn" type="reset"></button>
+        </form>
+    </div>
+    <script src="./gettingStarted.js"></script>
+</body>
+</html>

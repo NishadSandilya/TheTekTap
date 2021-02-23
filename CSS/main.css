@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 *,*::before, *::after{
   margin: 0;
@@ -444,5 +445,46 @@ header{
   transition: all 0.3s ease ease-in-out;
 }
 }
-
-
+/* temporary changes were made here */
+.make-invisible{
+  display: none;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.correction{
+  min-height: 100vh;
+  max-width: 80vw;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: beige solid; */
+}
+.correction h3{
+  display: flex;
+  border-radius: 15px;
+  background-color: rgba(238, 202, 255, 0.61);
+  padding: 20px 40px;
+  font-weight: 700;
+  text-align: left;
+  /* text-align: center; */
+  width: fit-content;
+  color: rgb(117, 117, 117);
+}
+.correction h1{
+  display: block;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  margin: 20px auto;
+  color: #7a7a7a;
+  text-align: center;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 20px 40px;
+  background-color: rgba(89, 255, 255, 0.349);
+}
